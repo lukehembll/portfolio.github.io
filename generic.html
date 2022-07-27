@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cyclistic Case Study</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Case Study</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">My Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/luke-hembling/" target="_blank"class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/lukehembll" target="_blank"class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>How Does a Bike-Share Navigate Speedy Success?<br />
+									</h1>
+									<p>Cyclistic Case study - Google Data Analytics Capstone project.</p>
+								</header>
+								<div class="image main"><img src="images/bikes.jpg" alt="" /></div>
+								<p>Cyclistic is a bike sharing company that is based in Chicago, a program that has grown to a fleet of over 5,800 bicycles. These bicycles are also geotracked and can be borrowed from amongst 692 stations across the city. The company sets itself apart with its offering of different types of bikes such as reclining bikes, hand tricycles and cargo bikes, thus making it more inclusive to people with disabilities who may not be able to use the regular two-wheeled bikes. The majority of riders use the traditional bikes, and about 8% use the assistive bike options. Although 80% use these bikes for leisure, there is still around 30% who use them to commute to work every day.</p>
+								<p>The pricing plan for these bicycles is also very flexible, with single-ride passes, full-day passes and annual memberships being offered. The annual memberships become Cyclistic members whilst the others are considered casual riders. Financial analysts and the director of marketing have concluded that annual members are more profitable than casual riders, believing that maximising the number of annual members will be the key to future growth, and my role is to address this question: How do annual members and casual riders use Cyclistic bikes differently? I will do this by analysing the available data to see to what extent they differ and visualise these results for the team in order to find some conclusive evidence.</p>
+								<h2>Scenario</h2>
+								<p>You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.</p>
+								<h2>Business Task</h2>
+								<p>The main key question of this report is to find out: what are the key differences between casual and annual Cyclistic riders? And furthermore How can we convert casual riders into annual riders to maximise the number of annual memberships? This will be done by finding patterns in users activities and comparing how they differ to each other, and all these results will be presented to the key stakeholders who are the director of marketing and the Cyclistic executive team.</p>
+								<h2>Prepare</h2>
+								<p>The dataset was available to me online through the website <a href="https://divvy-tripdata.s3.amazonaws.com/index.html"target="_blank">amazonaws.com</a> and for this report I will download and use the last 12 months of data, in this case that is between the months of April 2021 and March 2022. The data is stored monthly and sorted in that order, the file is also stored in the CSV format.</p>
+								<p>Data is licensed and can be found <a href="https://ride.divvybikes.com/data-license-agreement"target="_blank">here</a>, and the data has also been stored locally on my hard drive and backed up on a cloud, where only I can access it. Some of these data files contains over 500,000 records. There is data about each individual trip, along with the member type which will be important to address the question we’re trying to answer. The data also does not contain any personal information or financial transactions.</p>
+								<p>The data is recent, cited, original, and appears to be reliable based on the data it is showing. Furthermore it is comprehensive and will allow me to answer the business question. The next step to continue with this analysis, I will have to deal with some inconsistencies in the data.</p>
+								<h2>Process</h2>
+								<p>As the datasets contain a high number of records, I decided that using a spreadsheet application was not suitable for this, and had to decide between SQL and R. I decided to use R for this as I wanted to gain more experience with it, and also use Tableau to create visualisations. Now to ensure the integrity of the data.</p>
+								<p>Here are a brief checklist of things I want to ensure:</p>
+								<p><li>Ensure column names are clear</li>
+									<li>Ensure the datatypes are consistent</li>
+									<li>Remove blank values where necessary</li>
+									<li>Remove duplicates</li>
+									<li>Ensure consistency in the decimal places of latitude and longitude</li>
+									<li>After calculating trip duration, check values are correct and not negative.</li></p>
+								<p>I stored all the coding for this project on Github, and the cleaning of the data can be found here: <a href="https://github.com/lukehembll/cyclistic-casestudy/tree/main/cleaning-data"target="_blank">cleaning</a></p>
+								<p>After cleaning the data, I had to make sure all the variables were consistent and combine all the datasets, which can be found here: <a href="https://github.com/lukehembll/cyclistic-casestudy/tree/main/process-data"target="_blank">process</a></p>
+								<h2>Analyse</h2>
+								<p>After combining all the data and ensuring the data’s integrity, it was time to discover insights in the data.
+
+								<p>The coding for the analysis can be found here: <a href="https://github.com/lukehembll/cyclistic-casestudy/tree/main/analyse-data"target="_blank">Analysis</a></p>
+									
+								<p>The general trends I found are:
+									<li>Casual riders have longer bike trips compared to members.</li>
+									<li>Members trips are shorter but more consistent.</li>
+									<li>Casual riders peak on the weekends and drop off during the week while members peak in the middle of the week.</li>
+									<li>Summer is the most popular season for bike trips, while winter see’s a big drop off in trips.</li></p>
+								<h2>Share</h2>
+								<p>The visualisatiosns will go into further detail in my analysis, they can be found on this <a href="https://public.tableau.com/app/profile/luke.hembling/viz/tripdata_16529634575280/Dashboard1"target="_blank">Tableau dashboard</a>.</p>
+								<h2>Recommendations</h2>
+								<p> Upon analysing the data, I would recommend the following strategies:
+								<ol><li>Launch promotion to promote a healthy bicycle lifestyle for daily use to work.</li>
+									<li>Add incentive to riding bicycles by introducing benefits for long term riders. </li>
+									<li>In addition to this, a members rewards program. Incentive for longer trip durations and frequency.</li>
+									<li>Advertising this new program effectively.</li></ol></p>
+								<p>Additional data that would expand these findings would be surveying riders to understand what kind of benefits they would prefer, advertising these benefits would also attract more member riders.  </p>
+
+
+							</section>
+
+							<section class="split contact">
+								<section class="alt">
+									<h3>Location</h3>
+									<p>London,<br />
+									United Kingdom</p>
+								</section>
+								<section>
+									<h3>Phone</h3>
+									<p><a href="#">(000) 000-0000</a></p>
+								</section>
+								<section>
+									<h3>Email</h3>
+									<p><a href="#">lukehembling@gmail.com</a></p>
+								</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/luke-hembling/" target="_blank"class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/lukehembll" target="_blank"class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
